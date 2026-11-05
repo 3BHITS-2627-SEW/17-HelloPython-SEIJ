@@ -1,0 +1,1 @@
+from meineKlasse import *
