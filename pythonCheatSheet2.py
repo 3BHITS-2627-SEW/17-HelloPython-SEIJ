@@ -6,8 +6,7 @@ from numpy import number as npynb
 
 from numpy import *
 
-from mein_paket import *
-from mein_paket import meineKlasse
+from mein_paket.meineKlasse import meineKlasse
 
 def main():
     number = numpy.sqrt(4)
@@ -17,8 +16,14 @@ def main():
 
 
     meinObjekt = meineKlasse()
-    print("Name von Objekt: ", meinObjekt.name)
+    print("Name von Objekt: ", "PRIVAT")    #meinObjekt.__name)
+    print("Welcher Monat ist es? ", meinObjekt.noNoneNovember())
+
+    meinObjekt.set_name("meinObjekt")
+    print("Namen nach Aenderung:",meinObjekt.get_name())
+
     pass
 
 if __name__ == "__main__":
     main()
+
