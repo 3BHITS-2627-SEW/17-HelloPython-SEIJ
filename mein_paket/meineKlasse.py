@@ -12,3 +12,7 @@ class MeineKlasse:
 
     def set_name(self, neuer_name : str) -> None:
         self.__name = neuer_name
+
+    def __str__(self) -> str: 
+        return f"Eine Instanz der Klasse 'Meine Klasse' \
+            mit dem Namen {self.__name}"
